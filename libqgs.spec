@@ -1,4 +1,5 @@
 Summary:	The Qt wrapper around the Ghostscript shared library
+Summary(pl):	Wrapper Qt do biblioteki wspó³dzielonej Ghostscripta
 Name:		libqgs
 Version:	1.0
 Release:	2
@@ -25,25 +26,48 @@ to Ghostscript stdio/err messages via signals and via buffer (if
 enabled), API documentation, and examples of use.
 
 This library is a part of a project sponsored by Google Summer of 
-Code program, http://code.google.com/summerofcode.html.
+Code program, <http://code.google.com/summerofcode.html>.
+
+%description -l pl
+libqgs to wrapper do biblioteki wspó³dzielonej Ghostscripta. U³atwia
+korzystanie z Ghostscripta w aplikacjach Qt. Oszczêdza konieczno¶æ
+dbania o uruchamianie Ghostscripta, analizê jego wyj¶cia i wykonywania
+dziwnych sztuczek w celu otrzymania wyrenderowanych stron. Ta
+biblioteka umo¿liwia progresywne i nieprogresywne renderowanie stron,
+operowanie na obiektach QImage, obs³ugê b³êdów z obs³ug± wyj±tków,
+dostêp do komunikatów Ghostscripta poprzez sygna³y i bufor (je¶li jest
+w³±czony), zawiera dokumentacjê API oraz przyk³ady u¿ycia.
+
+Ta biblioteka jest czê¶ci± projektu sponsorowanego przez program
+Google Summer of Code - <http://code.google.com/summerofcode.html>.
 
 %package devel
 Summary:	Development files for the Qt wrapper around the Ghostscript shared library
+Summary(pl):	Pliki programistyczne wrappera Qt do biblioteki wspó³dzielonej Ghostscripta
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
-This is the package containing the development libraries and header
-files for the Qt wrapper around the Ghostscript shared library.
+This is the package containing the header files for the Qt wrapper
+around the Ghostscript shared library.
+
+%description devel -l pl
+Ten pakiet zawiera pliki nag³ówkowe dla wrappera Qt do biblioteki
+wspó³dzielonej Ghostscripta.
 
 %package examples
 Summary:	Code with example use of the Qt wrapper around the Ghostscript shared library
+Summary(pl):	Przyk³ady u¿ycia wrappera Qt do biblioteki wspó³dzielonej Ghostscripta
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description examples
 This is the package containing the code with example use of the Qt
 wrapper around the Ghostscript shared library.
+
+%description examples -l pl
+Ten pakiet zawiera kod z przyk³adami u¿ycia wrappera Qt do biblioteki
+wspó³dzielonej Ghostscripta.
 
 %prep
 %setup -q
@@ -64,15 +88,15 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}
-cp -f libqgs/examples/*.cpp $RPM_BUILD_ROOT%{_examplesdir}/%{name}
-cp -f libqgs/examples/*.h $RPM_BUILD_ROOT%{_examplesdir}/%{name}
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -f libqgs/examples/*.cpp $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -f libqgs/examples/*.h $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post		-p /sbin/ldconfig
-%postun		-p /sbin/ldconfig
+%post	-p /sbin/ldconfig
+%postun	-p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
@@ -87,4 +111,4 @@ rm -rf $RPM_BUILD_ROOT
 %files examples
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%{_examplesdir}/%{name}
+%{_examplesdir}/%{name}-%{version}
