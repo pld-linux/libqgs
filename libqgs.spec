@@ -1,11 +1,11 @@
 Summary:	The Qt wrapper around the Ghostscript shared library
 Name:		libqgs
 Version:	1.0
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Development/Libraries	
 Source0:	http://team.pld-linux.org/~djurban/libqgs/%{name}-%{version}.tar.bz2
-# Source0-md5:	c6713e268c207c4f5ab01f6e6b67e612
+# Source0-md5:	2db0481540d3d766468ca247e8f3ef4a
 URL:		http://team.pld-linux.org/~djurban/libqgs/
 BuildRequires:	autoconf
 BuildRequires:	automake
