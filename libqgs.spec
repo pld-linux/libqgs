@@ -4,14 +4,14 @@ Name:		libqgs
 Version:	1.0
 Release:	2
 License:	LGPL
-Group:		Development/Libraries	
+Group:		Development/Libraries
 Source0:	http://team.pld-linux.org/~djurban/libqgs/%{name}-%{version}.tar.bz2
 # Source0-md5:	2db0481540d3d766468ca247e8f3ef4a
 URL:		http://team.pld-linux.org/~djurban/libqgs/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	qt-devel >= 6:3.3.5
 BuildRequires:	ghostscript-devel
+BuildRequires:	qt-devel >= 6:3.3.5
 BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -25,7 +25,7 @@ on a QImage object, error handling with support for exceptions, access
 to Ghostscript stdio/err messages via signals and via buffer (if
 enabled), API documentation, and examples of use.
 
-This library is a part of a project sponsored by Google Summer of 
+This library is a part of a project sponsored by Google Summer of
 Code program, <http://code.google.com/summerofcode.html>.
 
 %description -l pl
