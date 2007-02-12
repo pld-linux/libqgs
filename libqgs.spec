@@ -1,5 +1,5 @@
 Summary:	The Qt wrapper around the Ghostscript shared library
-Summary(pl):	Wrapper Qt do biblioteki wspó³dzielonej Ghostscripta
+Summary(pl.UTF-8):   Wrapper Qt do biblioteki wspÃ³Å‚dzielonej Ghostscripta
 Name:		libqgs
 Version:	1.0
 Release:	2
@@ -28,22 +28,22 @@ enabled), API documentation, and examples of use.
 This library is a part of a project sponsored by Google Summer of
 Code program, <http://code.google.com/summerofcode.html>.
 
-%description -l pl
-libqgs to wrapper do biblioteki wspó³dzielonej Ghostscripta. U³atwia
-korzystanie z Ghostscripta w aplikacjach Qt. Oszczêdza konieczno¶æ
-dbania o uruchamianie Ghostscripta, analizê jego wyj¶cia i wykonywania
+%description -l pl.UTF-8
+libqgs to wrapper do biblioteki wspÃ³Å‚dzielonej Ghostscripta. UÅ‚atwia
+korzystanie z Ghostscripta w aplikacjach Qt. OszczÄ™dza koniecznoÅ›Ä‡
+dbania o uruchamianie Ghostscripta, analizÄ™ jego wyjÅ›cia i wykonywania
 dziwnych sztuczek w celu otrzymania wyrenderowanych stron. Ta
-biblioteka umo¿liwia progresywne i nieprogresywne renderowanie stron,
-operowanie na obiektach QImage, obs³ugê b³êdów z obs³ug± wyj±tków,
-dostêp do komunikatów Ghostscripta poprzez sygna³y i bufor (je¶li jest
-w³±czony), zawiera dokumentacjê API oraz przyk³ady u¿ycia.
+biblioteka umoÅ¼liwia progresywne i nieprogresywne renderowanie stron,
+operowanie na obiektach QImage, obsÅ‚ugÄ™ bÅ‚Ä™dÃ³w z obsÅ‚ugÄ… wyjÄ…tkÃ³w,
+dostÄ™p do komunikatÃ³w Ghostscripta poprzez sygnaÅ‚y i bufor (jeÅ›li jest
+wÅ‚Ä…czony), zawiera dokumentacjÄ™ API oraz przykÅ‚ady uÅ¼ycia.
 
-Ta biblioteka jest czê¶ci± projektu sponsorowanego przez program
+Ta biblioteka jest czÄ™Å›ciÄ… projektu sponsorowanego przez program
 Google Summer of Code - <http://code.google.com/summerofcode.html>.
 
 %package devel
 Summary:	Development files for the Qt wrapper around the Ghostscript shared library
-Summary(pl):	Pliki programistyczne wrappera Qt do biblioteki wspó³dzielonej Ghostscripta
+Summary(pl.UTF-8):   Pliki programistyczne wrappera Qt do biblioteki wspÃ³Å‚dzielonej Ghostscripta
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -51,13 +51,13 @@ Requires:	%{name} = %{version}-%{release}
 This is the package containing the header files for the Qt wrapper
 around the Ghostscript shared library.
 
-%description devel -l pl
-Ten pakiet zawiera pliki nag³ówkowe dla wrappera Qt do biblioteki
-wspó³dzielonej Ghostscripta.
+%description devel -l pl.UTF-8
+Ten pakiet zawiera pliki nagÅ‚Ã³wkowe dla wrappera Qt do biblioteki
+wspÃ³Å‚dzielonej Ghostscripta.
 
 %package examples
 Summary:	Code with example use of the Qt wrapper around the Ghostscript shared library
-Summary(pl):	Przyk³ady u¿ycia wrappera Qt do biblioteki wspó³dzielonej Ghostscripta
+Summary(pl.UTF-8):   PrzykÅ‚ady uÅ¼ycia wrappera Qt do biblioteki wspÃ³Å‚dzielonej Ghostscripta
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
@@ -65,9 +65,9 @@ Requires:	%{name}-devel = %{version}-%{release}
 This is the package containing the code with example use of the Qt
 wrapper around the Ghostscript shared library.
 
-%description examples -l pl
-Ten pakiet zawiera kod z przyk³adami u¿ycia wrappera Qt do biblioteki
-wspó³dzielonej Ghostscripta.
+%description examples -l pl.UTF-8
+Ten pakiet zawiera kod z przykÅ‚adami uÅ¼ycia wrappera Qt do biblioteki
+wspÃ³Å‚dzielonej Ghostscripta.
 
 %prep
 %setup -q
