@@ -1,5 +1,5 @@
 Summary:	The Qt wrapper around the Ghostscript shared library
-Summary(pl.UTF-8):   Wrapper Qt do biblioteki współdzielonej Ghostscripta
+Summary(pl.UTF-8):	Wrapper Qt do biblioteki współdzielonej Ghostscripta
 Name:		libqgs
 Version:	1.0
 Release:	2
@@ -43,7 +43,7 @@ Google Summer of Code - <http://code.google.com/summerofcode.html>.
 
 %package devel
 Summary:	Development files for the Qt wrapper around the Ghostscript shared library
-Summary(pl.UTF-8):   Pliki programistyczne wrappera Qt do biblioteki współdzielonej Ghostscripta
+Summary(pl.UTF-8):	Pliki programistyczne wrappera Qt do biblioteki współdzielonej Ghostscripta
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -57,7 +57,7 @@ współdzielonej Ghostscripta.
 
 %package examples
 Summary:	Code with example use of the Qt wrapper around the Ghostscript shared library
-Summary(pl.UTF-8):   Przykłady użycia wrappera Qt do biblioteki współdzielonej Ghostscripta
+Summary(pl.UTF-8):	Przykłady użycia wrappera Qt do biblioteki współdzielonej Ghostscripta
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
